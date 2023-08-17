@@ -1,7 +1,13 @@
 @import "normalize.css";
+<<<<<<< HEAD
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+=======
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";
+>>>>>>> ef87e4f4ec1c53663da1965e81971faf342e41c0
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";

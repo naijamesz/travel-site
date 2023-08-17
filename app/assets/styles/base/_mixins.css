@@ -16,4 +16,12 @@
   }
 }
 @define-mixin clearfix {
+<<<<<<< HEAD
+=======
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+>>>>>>> ef87e4f4ec1c53663da1965e81971faf342e41c0
 }
