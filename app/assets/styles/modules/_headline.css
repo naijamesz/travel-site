@@ -1,10 +1,9 @@
 .headline {
   font-size: 2rem;
-<<<<<<< HEAD
   font-weight: 300;
-=======
+
   font-weight: 400;
->>>>>>> ef87e4f4ec1c53663da1965e81971faf342e41c0
+
   color: $mainBlue;
 
   @mixin atSmall {

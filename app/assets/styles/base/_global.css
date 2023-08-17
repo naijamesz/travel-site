@@ -12,9 +12,5 @@ img {
   box-sizing: border-box;
 }
 a {
-<<<<<<< HEAD
   color: $mainOrange;
-=======
-  color: #d59541;
->>>>>>> ef87e4f4ec1c53663da1965e81971faf342e41c0
 }
