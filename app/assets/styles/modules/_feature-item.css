@@ -8,7 +8,7 @@
 
   &__icon {
     display: block;
-    margin: 0auto;
+    margin: 0 auto;
 
     @mixin atSmall {
       position: absolute;
@@ -20,7 +20,7 @@
     font-size: 1.6rem;
     font-weight: 300;
     margin-top: 0.7em;
-    margin-bottom: 0.8re;
+    margin-bottom: 0.8rem;
     text-align: center;
 
     @mixin atSmall {
