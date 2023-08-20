@@ -5,6 +5,7 @@ if (module.hot) {
 }
 
 /* Lesson example code below this line */
+
 // function Person(fullName, favColor) {
 //   this.name = fullName;
 //   this.favoriteColor = favColor;
