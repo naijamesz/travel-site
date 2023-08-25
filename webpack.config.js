@@ -1,4 +1,6 @@
 const path = require('path');
+const Webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
 
 const postCSSPlugins = [
   require('postcss-import'),
@@ -16,13 +18,13 @@ module.exports = {
     path: path.resolve(__dirname, 'app'),
   },
   devServer: {
+    hot: 'only',
     watchFiles: ['app/**/*.html'],
     static: {
       directory: path.join(__dirname, 'app'),
-      watch: false,
     },
-    hot: true,
-    port: 3000,
+    liveReload: false,
+    port: 3001,
   },
   mode: 'development',
   module: {
