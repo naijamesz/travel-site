@@ -18,7 +18,7 @@ module.exports = {
     path: path.resolve(__dirname, 'app'),
   },
   devServer: {
-    hot: 'only',
+    hot: true,
     watchFiles: ['app/**/*.html'],
     static: {
       directory: path.join(__dirname, 'app'),
