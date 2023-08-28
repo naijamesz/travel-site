@@ -1,7 +1,10 @@
 import '../styles/styles.css';
+import 'lazysizes';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+
+// alert('HI');
 
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
