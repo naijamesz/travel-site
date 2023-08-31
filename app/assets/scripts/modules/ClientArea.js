@@ -5,10 +5,7 @@ class ClientArea {
     this.injectHTML();
     // All class selector in injectHTML within client-area div
     this.form = document.querySelector('client-area__form');
-    this.field = document.querySelector(
-      // input field
-      'client-area__input'
-    );
+    this.field = document.querySelector('client-area__input');
     // contentArea
     this.contentArea = document.querySelector('client-area__content-area');
     this.events();
@@ -17,7 +14,6 @@ class ClientArea {
   events() {
     this.form.addEventListener('submit', e => {
       e.preventDefault();
-      // event call sendRequest
       this.sendRequest();
     });
   }
