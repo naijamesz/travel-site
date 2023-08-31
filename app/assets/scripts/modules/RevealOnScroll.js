@@ -1,6 +1,8 @@
 import throttle from 'lodash/throttle';
 import debounce from 'lodash/debounce';
 
+
+// RevealOnScroll 
 class RevealOnScroll {
   constructor(els, thresholdPercent) {
     this.thresholdPercent = thresholdPercent;
@@ -56,3 +58,5 @@ class RevealOnScroll {
 }
 
 export default RevealOnScroll;
+
+
