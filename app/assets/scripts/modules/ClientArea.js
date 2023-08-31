@@ -3,11 +3,9 @@ import Axios from 'axios';
 class ClientArea {
   constructor() {
     this.injectHTML();
-    // All class selector in injectHTML within client-area div
-    this.form = document.querySelector('client-area__form');
-    this.field = document.querySelector('client-area__input');
-    // contentArea
-    this.contentArea = document.querySelector('client-area__content-area');
+    this.form = document.querySelector('.client-area__form');
+    this.field = document.querySelector('.client-area__input');
+    this.contentArea = document.querySelector('.client-area__content-area');
     this.events();
   }
 
@@ -28,7 +26,7 @@ class ClientArea {
         this.contentArea.innerHTML = response.data;
       })
       .catch(() => {
-        this.contentArea.innerHTML = `<p class="client-area_error">That secret phrase is not correct. Try again.</p>`;
+        this.contentArea.innerHTML = `<p class="client-area__error">That secret phrase is not correct. Try again.</p>`;
         this.field.value = '';
         this.field.focus();
       });
@@ -38,7 +36,7 @@ class ClientArea {
     document.body.insertAdjacentHTML(
       'beforeend',
       `
-      <div class="client-area">
+    <div class="client-area">
   <div class="wrapper wrapper--medium">
     <h2 class="section-title section-title--blue">Secret Client Area</h2>
     <form class="client-area__form" action="">
